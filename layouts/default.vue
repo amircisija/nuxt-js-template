@@ -1,13 +1,24 @@
 <template>
-  <div class="container">
-    <Nuxt/>
-  </div>
+  <section>
+    <AppNavigation/>
+    <div class="container-fluid page__section">
+      <Nuxt/>
+    </div>
+  </section>
 </template>
+<script>
+import AppNavigation from "~/components/AppNavigation";
+export default {
+  components: {
+    AppNavigation
+  }
+};
+</script>
 
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -23,14 +34,6 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
-}
-
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .button--green {
@@ -62,5 +65,21 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #2E495E;
+}
+
+h1 {
+  font-weight: 400;
+}
+.name {
+  color: #00C48D;
+}
+p {
+  margin-top: 20px;
+}
+.page__section {
+  padding-top: 100px;
+}
+.box-shadow-1 {
+  box-shadow: rgba(26, 92, 255, 0.12) 0px 4px 15px 0px;
 }
 </style>

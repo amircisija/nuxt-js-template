@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-js",
+  "name": "nuxt-js-with-vuex",
   "version": "1.0.0",
   "description": "",
   "author": "Nuxt.js Team",
@@ -16,5 +16,9 @@
     "nuxt": "^2.12.2",
     "reqlim": "^0.0.0"
   },
-  "keywords": []
+  "keywords": [
+    "nuxt",
+    "vue",
+    "vuex"
+  ]
 }
